@@ -26,23 +26,12 @@ public class Main {
             scanner.nextLine();
 
             switch (choice) {
-                case 1:
-                    createTask(scanner);
-                    break;
-                case 2:
-                    viewTasks();
-                    break;
-                case 3:
-                    updateTaskPriority(scanner);
-                    break;
-                case 4:
-                    deleteTask(scanner);
-                    break;
-                case 5:
-                    exit = true;
-                    break;
-                default:
-                    System.out.println(ANSI_RED + "Invalid choice. Please enter a valid option.");
+                case 1 -> createTask(scanner);
+                case 2 -> viewTasks();
+                case 3 -> updateTaskPriority(scanner);
+                case 4 -> deleteTask(scanner);
+                case 5 -> exit = true;
+                default -> System.out.println(ANSI_RED + "Invalid choice. Please enter a valid option.");
             }
         }
 
@@ -119,3 +108,4 @@ public class Main {
         System.out.println(ANSI_GREEN + "Task deleted successfully!");
     }
 }
+//k
